@@ -1,0 +1,27 @@
+h1, h2, h3 {
+  font-family: "Barlow", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #162441;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.625rem;
+}
+
+/*# sourceMappingURL=style.css.map */
