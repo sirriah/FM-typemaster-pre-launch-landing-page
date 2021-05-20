@@ -1,0 +1,17 @@
+@use '../abstracts';
+
+.button{
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+
+    &--primary{
+        background-color: abstracts.$primary--500;
+
+        &:hover{
+            background-color: abstracts.$primary--300;
+        }
+    }
+
+}
