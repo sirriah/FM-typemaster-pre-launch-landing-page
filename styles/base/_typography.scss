@@ -9,7 +9,16 @@ h1, h2, h3 {
 }
 
 h1{
-    font-size: 3.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+       
+    @include abstracts.breakpoint-up(large){
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    
 }
 
 h2{
@@ -25,4 +34,7 @@ p{
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.625rem;
+    color: abstracts.$neutral-600;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }

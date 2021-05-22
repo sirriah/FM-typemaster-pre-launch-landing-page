@@ -1,0 +1,31 @@
+@use '../abstracts';
+
+.hero{
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;  
+
+  display: flex;
+  flex-direction: column;
+
+  @include abstracts.breakpoint-up(medium){
+    flex-direction: row;
+  }
+
+  &__text{
+      margin-bottom: 4.6875rem;
+  }
+
+  &__image{
+      border-radius: 1.125rem;
+      min-width: 23.25rem;
+      height: auto;
+  }
+
+  span{
+      font-family: 'Barlow', sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: abstracts.$neutral-600;
+      margin-left: 2rem;
+  }
+}

@@ -6,7 +6,15 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 64em) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
 }
 
 h2 {
@@ -22,12 +30,20 @@ p {
   font-weight: 500;
   font-size: 1rem;
   line-height: 1.625rem;
+  color: #7b8bad;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   background-color: white;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .sr-only {
@@ -41,19 +57,28 @@ body {
   text-decoration: none;
 }
 
-.flex {
+.flex, .flex--ai-c {
   display: flex;
   justify-content: space-between;
+}
+.flex--ai-c {
+  align-items: center;
 }
 
 .button, .button--neutral, .button--primary {
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
+  line-height: 1.625rem;
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
-  padding: 1rem 1.625rem;
+  padding: 0.6875rem 0.875rem;
   border-radius: 0.5rem;
+}
+@media only screen and (min-width: 40em) {
+  .button, .button--neutral, .button--primary {
+    padding: 1rem 1.625rem;
+  }
 }
 .button--primary {
   color: white;
@@ -71,8 +96,38 @@ body {
   background-color: #162441;
 }
 
+.header {
+  padding: 1.5rem;
+}
 .header__logolink {
   text-decoration: none;
+}
+
+.hero {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (min-width: 40em) {
+  .hero {
+    flex-direction: row;
+  }
+}
+.hero__text {
+  margin-bottom: 4.6875rem;
+}
+.hero__image {
+  border-radius: 1.125rem;
+  min-width: 23.25rem;
+  height: auto;
+}
+.hero span {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #7b8bad;
+  margin-left: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
