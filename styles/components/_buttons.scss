@@ -5,12 +5,29 @@
     text-transform: uppercase;
     font-style: normal;
     font-weight: bold;
+    text-decoration: none;
+    padding: 1rem 1.625rem;
+    border-radius: 0.5rem;
+    
 
     &--primary{
-        background-color: abstracts.$primary--500;
+        @extend .button;
+        color: abstracts.$neutral-0;
+        background-color: abstracts.$primary-500;
 
         &:hover{
-            background-color: abstracts.$primary--300;
+            background-color: abstracts.$primary-300;
+        }
+    }
+
+    &--neutral{
+        @extend .button;
+        color: abstracts.$neutral-800;
+        background-color: abstracts.$neutral-200;
+
+        &:hover{
+            color: abstracts.$neutral-0;
+            background-color: abstracts.$neutral-800;
         }
     }
 

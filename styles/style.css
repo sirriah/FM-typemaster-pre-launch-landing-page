@@ -24,4 +24,55 @@ p {
   line-height: 1.625rem;
 }
 
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button, .button--neutral, .button--primary {
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 1rem 1.625rem;
+  border-radius: 0.5rem;
+}
+.button--primary {
+  color: white;
+  background-color: #f26818;
+}
+.button--primary:hover {
+  background-color: #ff9b61;
+}
+.button--neutral {
+  color: #162441;
+  background-color: #e8eff2;
+}
+.button--neutral:hover {
+  color: white;
+  background-color: #162441;
+}
+
+.header__logolink {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=style.css.map */

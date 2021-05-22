@@ -1,0 +1,22 @@
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.sr-only{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+    background-color: transparent;
+    border: none;
+    color: transparent;
+    text-decoration: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
