@@ -3,6 +3,7 @@ h1, h2, h3 {
   font-weight: 900;
   text-transform: uppercase;
   color: #162441;
+  margin-top: 0;
 }
 
 h1 {
@@ -43,6 +44,7 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -65,6 +67,16 @@ body {
   align-items: center;
 }
 
+.container {
+  margin-inline: 1.5rem;
+}
+@media only screen and (min-width: 64em) {
+  .container {
+    width: 69.375rem;
+    margin: 0px auto;
+  }
+}
+
 .button, .button--neutral, .button--primary {
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
@@ -74,6 +86,7 @@ body {
   text-decoration: none;
   padding: 0.6875rem 0.875rem;
   border-radius: 0.5rem;
+  display: inline-block;
 }
 @media only screen and (min-width: 40em) {
   .button, .button--neutral, .button--primary {
@@ -97,30 +110,55 @@ body {
 }
 
 .header {
-  padding: 1.5rem;
+  padding-block: 1.5rem;
 }
 .header__logolink {
   text-decoration: none;
 }
 
 .hero {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
   display: flex;
   flex-direction: column;
 }
 @media only screen and (min-width: 40em) {
   .hero {
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .hero__text {
   margin-bottom: 4.6875rem;
 }
+@media only screen and (min-width: 40em) {
+  .hero__text {
+    flex: 0 0 25rem;
+    padding-right: 3.75rem;
+    margin-bottom: 0rem;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .hero__text {
+    flex: 0 0 27.8125rem;
+  }
+}
 .hero__image {
   border-radius: 1.125rem;
   min-width: 23.25rem;
   height: auto;
+  flex-shrink: 0;
+}
+@media only screen and (min-width: 40em) {
+  .hero__image {
+    height: 26.5625rem;
+    width: auto;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .hero__image {
+    width: 33.75rem;
+    height: auto;
+  }
 }
 .hero span {
   font-family: "Barlow", sans-serif;
@@ -128,6 +166,39 @@ body {
   text-transform: uppercase;
   color: #7b8bad;
   margin-left: 2rem;
+}
+
+.gallery {
+  padding-top: 1.5rem;
+}
+.gallery__wrapper {
+  display: flex;
+  margin-right: 1.5rem;
+  gap: 1.5rem;
+  height: 12.0625rem;
+}
+.gallery__image {
+  object-fit: contain;
+  height: 12.0625rem;
+}
+
+.corners--right {
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+.corners--left {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.multiply {
+  mix-blend-mode: multiply;
+  opacity: 0.75;
+}
+
+.orange {
+  background-color: #f26818;
 }
 
 /*# sourceMappingURL=style.css.map */

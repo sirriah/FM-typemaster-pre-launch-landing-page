@@ -9,6 +9,7 @@
     text-decoration: none;
     padding: 0.6875rem 0.875rem;
     border-radius: 0.5rem;
+    display: inline-block;
 
     @include abstracts.breakpoint-up(medium) {
         padding: 1rem 1.625rem;

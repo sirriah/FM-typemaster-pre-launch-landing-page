@@ -1,0 +1,39 @@
+@use '../abstracts';
+
+.gallery{
+    padding-top: 1.5rem;
+
+
+    &__wrapper{
+        display: flex;
+        margin-right: 1.5rem;
+        gap: 1.5rem;
+        height: 12.0625rem;
+    }
+
+    &__image{
+        object-fit: contain;
+        height: 12.0625rem;
+    }
+
+}
+
+.corners--right{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.corners--left{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.multiply{
+    mix-blend-mode: multiply;
+    opacity: 0.75;
+}
+
+.orange{
+    background-color: abstracts.$primary-500;
+    
+}
