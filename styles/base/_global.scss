@@ -1,49 +1,47 @@
 @use '../abstracts';
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    font-family: 'Barlow', sans-serif;
-    font-weight: 500;
-    font-size: 1rem;
-    color: abstracts.$neutral-600;
-    overflow-x: hidden
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: abstracts.$neutral-600;
+  overflow-x: hidden;
 }
 
-.sr-only{
-    width: 1px;
-    height: 1px;
-    position: absolute;
-    overflow: hidden;
-    background-color: transparent;
-    border: none;
-    color: transparent;
-    text-decoration: none;
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  text-decoration: none;
 }
 
-.flex{
-    display: flex;
-    justify-content: space-between;
+.flex {
+  display: flex;
+  justify-content: space-between;
 
-    &--ai-c{
-        @extend .flex;
-        align-items: center;
-    }
+  &--ai-c {
+    @extend .flex;
+    align-items: center;
+  }
 }
 
 .container {
-    margin-inline: 1.5rem;
+  margin-inline: 1.5rem;
 
-    @include abstracts.breakpoint-up(large){
-        width: 69.375rem; //1110px
-        margin: 0px auto;
-    }
-
+  @include abstracts.breakpoint-up(large) {
+    width: 69.375rem; //1110px
+    margin: 0px auto;
+  }
 }
-

@@ -1,29 +1,28 @@
 @use '../abstracts';
 
-.hero{
+.hero {
   padding-top: 2.5rem;
   display: flex;
   flex-direction: column;
   position: relative;
 
-  @include abstracts.breakpoint-up(medium){
+  @include abstracts.breakpoint-up(medium) {
     padding-top: 1.375rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
   }
 
-  @include abstracts.breakpoint-up(medium){
+  @include abstracts.breakpoint-up(medium) {
     padding-top: 1.75rem;
   }
 
-  &:after{
-    @include abstracts.breakpoint-up(xlarge){
+  &:after {
+    @include abstracts.breakpoint-up(xlarge) {
       content: "";
       display: block;
       position: absolute;
-      background-image: url('./../assets/shared/pattern-square.svg');
+      background-image: url("./../assets/shared/pattern-square.svg");
       right: 0;
       transform: translateX(calc(100% + 1.5rem));
       top: 1.75rem;
@@ -31,45 +30,43 @@
       height: 15rem;
     }
   }
-  
 
-  &__text{
-      margin-bottom: 4rem;
-      @include abstracts.breakpoint-up(medium){
-        flex: 0 0 25rem;
-        padding-right: 3.75rem;
-        margin-bottom: 0rem;
-      }
+  &__text {
+    margin-bottom: 4rem;
+    @include abstracts.breakpoint-up(medium) {
+      flex: 0 0 25rem;
+      padding-right: 3.75rem;
+      margin-bottom: 0rem;
+    }
 
-      @include abstracts.breakpoint-up(large){
-        flex: 0 0 27.8125rem;
-      }
-
+    @include abstracts.breakpoint-up(large) {
+      flex: 0 0 27.8125rem;
+    }
   }
 
-  &__image{
-      border-radius: 1.125rem;
-      min-width: 23.25rem;
+  &__image {
+    border-radius: 1.125rem;
+    min-width: 23.25rem;
+    height: auto;
+    flex-shrink: 0;
+    //margin-left: 1.5rem;
+
+    @include abstracts.breakpoint-up(medium) {
+      height: 26.5625rem;
+      width: auto;
+    }
+
+    @include abstracts.breakpoint-up(large) {
+      width: 33.75rem;
       height: auto;
-      flex-shrink: 0;
-      //margin-left: 1.5rem;
-
-      @include abstracts.breakpoint-up(medium){
-        height: 26.5625rem;
-        width: auto;
-      }
-
-      @include abstracts.breakpoint-up(large){
-        width: 33.75rem;
-        height: auto;
-      }
+    }
   }
 
-  span{
-      font-family: 'Barlow', sans-serif;
-      font-weight: 700;
-      text-transform: uppercase;
-      color: abstracts.$neutral-600;
-      margin-left: 2rem;
+  span {
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: abstracts.$neutral-600;
+    margin-left: 2rem;
   }
 }

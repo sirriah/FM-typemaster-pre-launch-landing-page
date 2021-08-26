@@ -1,89 +1,148 @@
-# Frontend Mentor - Typemaster pre-launch landing page
+# Frontend Mentor - Typemaster pre-launch landing page solution
 
-![Design preview for the Typemaster pre-launch landing page
- coding challenge](./preview.jpg)
+This is my solution to the [Typemaster pre-launch landing page challenge on Frontend Mentor](). 
+I love Frontend Mentor ❤️‍🔥 and I am happy that I can be a PRO.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for purchasing this premium Frontend Mentor coding challenge.
+- [Frontend Mentor - Typemaster pre-launch landing page solution](#frontend-mentor---typemaster-pre-launch-landing-page-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Continued development](#continued-development)
+    - [Useful resources](#useful-resources)
+  - [Author](#author)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects. These premium challenges are perfect portfolio pieces, so please feel free to use what you create in your portfolio to show others.
 
-**To do this challenge, you need a good understanding of HTML and CSS.**
 
-## The challenge
+## Overview
 
-Your challenge is to build out this landing page and get it looking as close to the design as possible.
+### The challenge
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+Users should be able to display the web page. No interaction is there - only hover effect on buttons.
 
-Your users should be able to:
+-
 
-- View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
+### Screenshot
 
-Want some support on the challenge? [Join our Slack community](https://www.frontendmentor.io/slack) and ask questions in the **#help** channel.
+![](./preview.jpg)
 
-## Where to find everything
 
-Your task is to build out the project to the design file provided. We provide both Sketch and Figma versions of the design, so you can choose which tool you prefer to use. You can download the design file on the platform. **Please be sure not to share them with anyone else.** The design download comes with a `README.md` file as well to help you get set up.
+### Links
 
-All the required assets for this project are in the `/assets` folder. The assets are already exported for the correct screen size and optimized. Some images are reusable at multiple screen sizes. So if you don't see an image in a specific folder, it will typically be in another folder for that page.
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-The design system in the design file will give you more information about the various colors, fonts, and styles used in this project.
+## My process
 
-## Building your project
+### Built with
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+- Semantic HTML5 markup
+- SASS, BEM
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
 
-1. Separate the `starter-code` from the rest of this project and rename it to something meaningful for you. Initialize the codebase as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/). **⚠️ IMPORTANT ⚠️: There are already a couple of `.gitignore` files in this project. Please do not remove them or change the content of the files. If you create a brand new project, please use the `.gitignore` files provided in your new codebase. This is to avoid the accidental upload of the design files to GitHub. With these premium challenges, please be sure not to share the design files in your GitHub repo. Thanks!**
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
 
-## Deploying your project
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+### What I learned
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+I am still beginner in creating my own mixins or extends. But I try to use it in this project. 
+I used the extend for the "details" part with icons. I defined the style of one item and then I extend it with icon image.
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
 
-## Create a custom `README.md`
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+To see how you can add code snippets, see below:
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+```html
+<section class="details container">
+        <h2 class="sr-only">Details list</h2>
+        <ul>
+          <li class="details__icon--compatible">
+            <h3>Highly compatible</h3>
+            <p>
+              Easy to use and works well with all major computer brands, gaming
+              consoles and mobile devices. Plug & play, no installation or
+              driver needed.
+            </p>
+          </li>
+          <li class="details__icon--bluetooth">
+            <h3>Wireless with bluetooth</h3>
+            <p>
+              Powerful 2.4G RF technology allows you to connect the cordless
+              keyboard from up to 30ft away. Simply plug the unifying receiver
+              into your computer.
+            </p>
+          </li>
+          <li class="details__icon--battery">
+            <h3>High capacity battery</h3>
+            <p>
+              Equipped with a long-lasting built-in battery, you’ll never have
+              to spend a dime on replaceable ones. Enjoy 40 hours of usage time
+              between charges.
+            </p>
+          </li>
+          <li class="details__icon--light">
+            <h3>RGB backlit modes</h3>
+            <p>
+              Choose from 4 backlight brightness levels and adjustable breathing
+              speed. Each key glows intensely in the dark and helps you type in
+              low light conditions.
+            </p>
+          </li>
+        </ul>
+      </section>
+```
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+```css
+&__icon--compatible:before {
+    content: "";
+    width: 4.0625rem;
+    height: 4.0625rem;
+    display: inline-block;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    background-image: url("./../assets/shared/icon-compatible.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: abstracts.$primary-500;
+  }
 
-## Submitting your solution
+  &__icon--bluetooth:before {
+    @extend .details__icon--compatible;
+    background-image: url("./../assets/shared/icon-bluetooth.svg");
+  }
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+  &__icon--battery:before {
+    @extend .details__icon--compatible;
+    background-image: url("./../assets/shared/icon-battery.svg");
+  }
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+  &__icon--light:before {
+    @extend .details__icon--compatible;
+    background-image: url("./../assets/shared/icon-light.svg");
+  }
+```
 
-**⚠️ IMPORTANT ⚠️: With these premium challenges, please be sure not to upload the design files to GitHub when you're submitting to the platform and sharing it around. If you've created a brand new project, the easiest way to do that is to copy across the `.gitignore` provided in this starter project.**
 
-## Sharing your solution
 
-There are multiple places you can share your solution:
+### Continued development
 
-1. Share your solution page in the **#finished-projects** channel of the [Slack community](https://www.frontendmentor.io/slack).
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+I made this project after the long time and I need to remind some things. For the next challenges I would like to use some advanced techniques of SASS. 
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+### Useful resources
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+- [A complete guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - This always helps me with setting of CSS Grid.
+- [A complete guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - And same for this with Flexbox 😀
 
-## Got feedback for us?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
 
-**Have fun building!** 🚀
+## Author
+
+- Frontend Mentor - [@sirriah](https://www.frontendmentor.io/profile/sirriah)
+

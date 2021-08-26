@@ -1,11 +1,10 @@
-.footer{
-    text-align: center;
-    &__copyright{
-        padding-bottom: 1.125rem;
+.footer {
+  text-align: center;
+  &__copyright {
+    padding-bottom: 1.125rem;
 
-        span{
-            font-weight: bold;
-        }
+    span {
+      font-weight: bold;
     }
-
+  }
 }
