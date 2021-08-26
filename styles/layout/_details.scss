@@ -1,0 +1,62 @@
+@use '../abstracts';
+
+.details {
+  ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+
+    h3 {
+      margin-inline: 3rem;
+      @include abstracts.breakpoint-up(medium) {
+        margin-inline: 0;
+      }
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 4rem;
+    }
+
+    @include abstracts.breakpoint-up(medium) {
+      text-align: left;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4.3125rem;
+    }
+
+    @include abstracts.breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.875rem;
+      margin-top: 8.5rem;
+    }
+  }
+
+  &__icon--compatible:before {
+    content: "";
+    width: 4.0625rem;
+    height: 4.0625rem;
+    display: inline-block;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    background-image: url("./../assets/shared/icon-compatible.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: abstracts.$primary-500;
+  }
+
+  &__icon--bluetooth:before {
+    @extend .details__icon--compatible;
+    background-image: url("./../assets/shared/icon-bluetooth.svg");
+  }
+
+  &__icon--battery:before {
+    @extend .details__icon--compatible;
+    background-image: url("./../assets/shared/icon-battery.svg");
+  }
+
+  &__icon--light:before {
+    @extend .details__icon--compatible;
+    background-image: url("./../assets/shared/icon-light.svg");
+  }
+}

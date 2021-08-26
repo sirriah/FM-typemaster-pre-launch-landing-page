@@ -1,6 +1,15 @@
+@use '../abstracts';
 
 .header{
     padding-block: 1.5rem;
+
+    @include abstracts.breakpoint-up(medium){
+        padding-block: 2.5rem;
+    }
+
+    @include abstracts.breakpoint-up(large){
+        padding-block: 3.4375rem;
+    }
 
 
     &__logolink{
