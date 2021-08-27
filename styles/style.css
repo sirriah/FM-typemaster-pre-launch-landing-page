@@ -164,7 +164,7 @@ body {
     padding-top: 1.75rem;
   }
 }
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 89.5em) {
   .hero:after {
     content: "";
     display: block;
@@ -237,7 +237,7 @@ body {
     margin: 2rem auto;
   }
 }
-@media only screen and (min-width: 90em) {
+@media only screen and (min-width: 89.5em) {
   .gallery:before {
     content: "";
     display: block;
