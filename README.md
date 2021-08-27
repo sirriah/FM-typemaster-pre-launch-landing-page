@@ -35,8 +35,8 @@ Users should be able to display the web page. No interaction is there - only hov
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL on Frontend mentor: [Frontend mentor challenge profile](https://www.frontendmentor.io/solutions/typemaster-landing-page-sass-bem-mobile-first-ptYWKu_tC)
+- Live Site URL: [Vercel](https://fm-typemaster-pre-launch-landing-page.vercel.app/)
 
 ## My process
 
