@@ -1,4 +1,9 @@
-h1, h2, h3 {
+/* 
+Mixins
+*/
+h1,
+h2,
+h3 {
   font-family: "Barlow", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -44,7 +49,6 @@ body {
   background-color: white;
   margin: 0;
   padding: 0;
-  width: 100vw;
   font-family: "Barlow", sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -85,11 +89,13 @@ body {
   font-family: "Barlow", sans-serif;
   text-transform: uppercase;
   line-height: 1.625rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: bold;
   text-decoration: none;
   padding: 0.6875rem 0.875rem;
   border-radius: 0.5rem;
+  border: none;
   display: inline-block;
 }
 @media only screen and (min-width: 40em) {
@@ -104,6 +110,9 @@ body {
 .button--primary:hover {
   background-color: #ff9b61;
 }
+.button--primary:focus {
+  outline: 3px solid #162441;
+}
 .button--neutral {
   color: #162441;
   background-color: #e8eff2;
@@ -111,6 +120,9 @@ body {
 .button--neutral:hover {
   color: white;
   background-color: #162441;
+}
+.button--neutral:focus {
+  outline: 3px solid #f26818;
 }
 
 .header {
@@ -128,6 +140,9 @@ body {
 }
 .header__logolink {
   text-decoration: none;
+}
+.header__logolink:focus, .header__logolink:focus-visible {
+  outline: 3px solid #162441;
 }
 
 .hero {
@@ -315,6 +330,11 @@ body {
   list-style-type: none;
   text-align: center;
   padding: 0;
+  /* for mobile view it is in one column, but for the tablet and desktop,
+  there are two columns and four columns. U used CSS Grid for this layout,
+  because it is easier than flexbox
+
+  */
 }
 .details ul h3 {
   margin-inline: 3rem;

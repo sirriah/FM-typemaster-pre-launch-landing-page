@@ -6,11 +6,13 @@
     font-family: 'Barlow', sans-serif;
     text-transform: uppercase;
     line-height: 1.625rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: bold;
     text-decoration: none;
     padding: 0.6875rem 0.875rem;
     border-radius: 0.5rem;
+    border: none;
     display: inline-block;
 
     @include abstracts.breakpoint-up(medium) {
@@ -27,6 +29,10 @@
         &:hover{
             background-color: abstracts.$primary-300;
         }
+
+        &:focus{
+            outline: 3px solid abstracts.$neutral-800;
+        }
     }
 
     &--neutral{
@@ -38,6 +44,11 @@
             color: abstracts.$neutral-0;
             background-color: abstracts.$neutral-800;
         }
+
+        &:focus{
+            outline: 3px solid abstracts.$primary-500;
+        }
     }
 
+    
 }
