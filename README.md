@@ -26,7 +26,7 @@ I love Frontend Mentor ❤️‍🔥 and I am happy that I can be a PRO.
 
 Users should be able to display the web page. No interaction is there - only hover effect on buttons.
 
--
+
 
 ### Screenshot
 
@@ -43,7 +43,8 @@ Users should be able to display the web page. No interaction is there - only hov
 ### Built with
 
 - Semantic HTML5 markup
-- SASS, BEM
+- SASS - 7-1 Architecture
+- BEM
 - Flexbox
 - CSS Grid
 - Mobile-first workflow

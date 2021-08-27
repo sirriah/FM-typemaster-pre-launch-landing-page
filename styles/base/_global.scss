@@ -16,6 +16,8 @@ body {
   overflow-x: hidden;
 }
 
+
+// this class hides elements, which can be seen only with screen reader
 .sr-only {
   width: 1px;
   height: 1px;
@@ -37,6 +39,7 @@ body {
   }
 }
 
+// container - center the elements in large view
 .container {
   margin-inline: 1.5rem;
 

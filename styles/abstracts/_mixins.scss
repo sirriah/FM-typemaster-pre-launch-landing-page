@@ -1,3 +1,8 @@
+/* 
+Mixins
+*/
+
+//map of breakpoints
 //640px, 1024px, 1400px
 $breakpoints: (
   "medium": "40em",
@@ -5,6 +10,7 @@ $breakpoints: (
   "xlarge": "90em",
 );
 
+// media queries mixin
 @mixin breakpoint-up($break) {
   @media only screen and (min-width: map-get($breakpoints, $break)) {
     @content;

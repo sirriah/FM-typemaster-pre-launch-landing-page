@@ -1,3 +1,5 @@
+// Gallery section 
+
 @use '../abstracts';
 
 .gallery {
@@ -17,6 +19,7 @@
     margin: 2rem auto;
   }
 
+  // This is the square which is visible only on the xlarge desktop view
   &:before {
     @include abstracts.breakpoint-up(xlarge) {
       content: "";
@@ -95,6 +98,8 @@
   }
 }
 
+
+// These two clasess are used for the orange color overlay 
 .multiply {
   mix-blend-mode: multiply;
   opacity: 0.75;
