@@ -40,10 +40,17 @@
       flex: 0 0 25rem;
       padding-right: 3.75rem;
       margin-bottom: 0rem;
+      
     }
 
     @include abstracts.breakpoint-up(large) {
       flex: 0 0 27.8125rem;
+    }
+  }
+
+  &__paragraph{
+    @include abstracts.breakpoint-up(medium) {
+      font-size: 1.125rem;
     }
   }
 
