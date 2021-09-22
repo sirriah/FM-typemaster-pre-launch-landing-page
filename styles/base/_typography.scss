@@ -43,4 +43,8 @@ p {
 
 }
 
-
+a, button {
+  &:focus, &:focus-visible{
+    outline: 3px solid abstracts.$neutral-800;
+  }
+}

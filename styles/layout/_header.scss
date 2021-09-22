@@ -16,8 +16,6 @@
   &__logolink {
     text-decoration: none;
 
-    &:focus, &:focus-visible{
-      outline: 3px solid abstracts.$neutral-800;
-    }
+    
   }
 }

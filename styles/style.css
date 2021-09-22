@@ -41,6 +41,10 @@ p {
   margin-bottom: 2rem;
 }
 
+a:focus, a:focus-visible, button:focus, button:focus-visible {
+  outline: 3px solid #162441;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -140,9 +144,6 @@ body {
 }
 .header__logolink {
   text-decoration: none;
-}
-.header__logolink:focus, .header__logolink:focus-visible {
-  outline: 3px solid #162441;
 }
 
 .hero {
